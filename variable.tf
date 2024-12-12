@@ -1,11 +1,11 @@
 variable "sa_emails" {
   description = "list of service account emails"
-  type = set(list)
-  default = []
+  type = set(string)
+  default = ["bill.hood@siroot.gcp-foundation.com"]
 }
 
-variable "group_name" {
+variable "group_email" {
   description = "list of service account emails"
-  type = set(list)
-  default = "tfese"
+  type = string
+  default = "tfesa@siroot.gcp-foundation.com"
 }
