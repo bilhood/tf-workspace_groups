@@ -8,6 +8,6 @@ data "googleworkspace_user" "bill" {
 
 resource "googleworkspace_group_member" "manager" {
   group_id = googleworkspace_group.tfesa.id
-  email    = googleworkspace_user.bill.primary_email
+  email    = data.googleworkspace_user.bill.primary_email
   role = "MANAGER"
 }
