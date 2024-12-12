@@ -5,6 +5,7 @@
 #  oauth_scopes = [
 #    "https://www.googleapis.com/auth/admin.directory.group",
 #    "https://www.googleapis.com/auth/admin.directory.group.member",
+#    "https://www.googleapis.com/auth/admin.directory.user.readonly",
 #    "https://www.googleapis.com/auth/admin.directory.user",
 #    "https://www.googleapis.com/auth/admin.directory.userschema",
 #  ]
@@ -19,7 +20,6 @@ provider "googleworkspace" {
   oauth_scopes = [
     "https://www.googleapis.com/auth/admin.directory.group",
     "https://www.googleapis.com/auth/admin.directory.group.member",
-    "https://www.googleapis.com/auth/admin.directory.user",
-    "https://www.googleapis.com/auth/admin.directory.userschema",
+    "https://www.googleapis.com/auth/admin.directory.user.readonly",
   ]
 }
