@@ -1,13 +1,7 @@
-variable "sa_emails" {
-  description = "list of service account emails"
+variable "member_emails" {
+  description = "list of serviceaccount/user/group member emails"
   type = set(string)
-  default = ["configconnector@prj-se-bilhood-5609.iam.gserviceaccount.com","gkenode@prj-se-bilhood-5609.iam.gserviceaccount.com"]
-}
-
-variable "user_emails" {
-  description = "list of service account emails"
-  type = set(string)
-  default = ["bill.hood@siroot.gcp-foundation.com"]
+  default = ["bill.hood@siroot.gcp-foundation.com","configconnector@prj-se-bilhood-5609.iam.gserviceaccount.com","gkenode@prj-se-bilhood-5609.iam.gserviceaccount.com"]
 }
 
 variable "group_email" {
